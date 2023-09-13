@@ -184,10 +184,12 @@ def buy(account_balance, history, inventory, product, price, quantity, selling_p
 
     else:
         inventory[item_name.upper()]["quantity"] += item_quantity
+        inventory[item_name.upper()]["list_price"] = list_price
         item_name_upper = item_name.upper()
         db_item = db.session.query(InventoryItem).filter_by(
             name=item_name_upper).first()
         db_item.quantity += item_quantity
+        db_item.list_price = list_price
 
     db.session.commit()
     return purchase_price
@@ -210,7 +212,7 @@ def balance(history, new_balance, account_balance, db):
         history_message = f"Z konta odjęto: {amount} PLN."
         history.append(history_message)
 
-        history_entry = HistoryEntry(messagey=history_message)
+        history_entry = HistoryEntry(message=history_message)
         db.session.add(history_entry)
         db.session.commit()
 
@@ -269,6 +271,12 @@ def sell(history, inventory, item, sell_quantity, db):
 
             history_entry = HistoryEntry(message=history_message)
             db.session.add(history_entry)
+
+            item_name_upper = item_to_sell
+            db_item = db.session.query(InventoryItem).filter_by(
+                name=item_name_upper).first()
+            db_item.quantity -= sell_quantity
+
             db.session.commit()
 
             return selling_price
