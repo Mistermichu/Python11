@@ -46,3 +46,11 @@ Zakupiono przedmiot: "Bu³ki", w iloœci: 100. Cena za sztuke: 0.83 PLN. £¹czna ce
 Sprzedano "Bu³ki" w iloœæ sztuk: 10. Cena sprzeda¿y: 13.0 PLN.
 Sprzedano "Wyka³aczki" w iloœæ sztuk: 2. Cena sprzeda¿y: 11.78 PLN.
 Zakupiono przedmiot: "Keczup", w iloœci: 50. Cena za sztuke: 4.34 PLN. £¹czna cena za zamówienie: 217.0 PLN.
+Zakupiono przedmiot: "Szynka", w iloœci: 20. Cena za sztuke: 3.73 PLN. £¹czna cena za zamówienie: 74.6 PLN.
+Zakupiono przedmiot: "Ser kozi", w iloœci: 6. Cena za sztuke: 8.7 PLN. £¹czna cena za zamówienie: 52.2 PLN.
+Sprzedano "Keczup" w iloœæ sztuk: 1. Cena sprzeda¿y: 7.99 PLN.
+Sprzedano "Szynka" w iloœæ sztuk: 1. Cena sprzeda¿y: 5.6 PLN.
+Sprzedano "Bu³ki" w iloœæ sztuk: 1. Cena sprzeda¿y: 1.3 PLN.
+Zakupiono przedmiot: "Sianko", w iloœci: 30. Cena za sztuke: 2.84 PLN. £¹czna cena za zamówienie: 85.2 PLN.
+Sprzedano "Pi³ka do koszykówki" w iloœæ sztuk: 1. Cena sprzeda¿y: 65.4 PLN.
+Do konta dodano: 15000.0 PLN.

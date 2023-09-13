@@ -58,7 +58,7 @@ def process_sell():
     sell_product = request.form.get('sell_product')
     sell_quantity = int(request.form.get('sell_quantity'))
     manager.account_balance += sell(manager.history,
-                                    manager.inventory, sell_product, sell_quantity)
+                                    manager.inventory, sell_product, sell_quantity, db)
     save_data.save_history(manager.history)
     save_data.save_balance(manager.account_balance)
     save_data.save_inventory(manager.inventory)
@@ -70,7 +70,7 @@ def process_sell():
 def process_balance():
     balance_change = float(request.form.get('balance_change'))
     manager.account_balance += balance(manager.history,
-                                       balance_change, manager.account_balance)
+                                       balance_change, manager.account_balance, db)
     save_data.save_history(manager.history)
     save_data.save_balance(manager.account_balance)
 
