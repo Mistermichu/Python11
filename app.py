@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from Data_store import FileHandler, FileWriter
 from functions import menu, balance, account_balance_note, sell, buy, list_overview, inventory_overview, history_overview, inventory_correction
 from Manager import Manager
+from flask_sqlalchemy import SQLAlchemy
 
 data_handler = FileHandler("history.txt", "balance.txt", "inventory.json")
 save_data = FileWriter(
@@ -10,6 +11,23 @@ manager = Manager(data_handler.history,
                   data_handler.account_balance, data_handler.inventory)
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///mydatabase.db'
+db = SQLAlchemy(app)
+
+
+class HistoryEntry(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    entry = db.Column(db.String(500))
+
+
+class InventoryItem(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(100))
+    quantity = db.Column(db.Integer)
+
+
+with app.app_context():
+    db.create_all()
 
 
 @app.route('/')
@@ -27,7 +45,7 @@ def process_buy():
     selling_price = float(request.form.get('selling_price'))
     purchase_quantity = int(request.form.get('purchase_quantity'))
     manager.account_balance -= round(buy(manager.account_balance,
-                                         manager.history, manager.inventory, purchase_product, purchase_price, purchase_quantity, selling_price), 2)
+                                         manager.history, manager.inventory, purchase_product, purchase_price, purchase_quantity, selling_price, db), 2)
     save_data.save_history(manager.history)
     save_data.save_balance(manager.account_balance)
     save_data.save_inventory(manager.inventory)

@@ -44,3 +44,5 @@ Z konta odjêto: -400.0 PLN.
 Do konta dodano: 550.0 PLN.
 Zakupiono przedmiot: "Bu³ki", w iloœci: 100. Cena za sztuke: 0.83 PLN. £¹czna cena za zamówienie: 83.0 PLN.
 Sprzedano "Bu³ki" w iloœæ sztuk: 10. Cena sprzeda¿y: 13.0 PLN.
+Sprzedano "Wyka³aczki" w iloœæ sztuk: 2. Cena sprzeda¿y: 11.78 PLN.
+Zakupiono przedmiot: "Keczup", w iloœci: 50. Cena za sztuke: 4.34 PLN. £¹czna cena za zamówienie: 217.0 PLN.

@@ -156,7 +156,8 @@ def break_point():
         bad_response()
 
 
-def buy(account_balance, history, inventory, product, price, quantity, selling_price):
+def buy(account_balance, history, inventory, product, price, quantity, selling_price, db):
+    from app import HistoryEntry
     item_name = product
     item_quantity = quantity
     cost_price = price
@@ -166,6 +167,11 @@ def buy(account_balance, history, inventory, product, price, quantity, selling_p
         return 0
     history_message = f"Zakupiono przedmiot: \"{item_name}\", w ilości: {item_quantity}. Cena za sztuke: {round(cost_price, 2)} PLN. Łączna cena za zamówienie: {round(purchase_price, 2)} PLN."
     history.append(history_message)
+
+    history_entry = HistoryEntry(entry=history_message)
+    db.session.add(history_entry)
+    db.session.commit()
+
     if item_name.upper() not in inventory:
         inventory[item_name.upper()] = {
             "item_name": item_name,
