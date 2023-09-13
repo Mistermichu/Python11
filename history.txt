@@ -1,0 +1,46 @@
+Do konta dodano: 1000.0 PLN.
+Do konta dodano: 9000.0 PLN.
+Zakupiono przedmiot: "Rower", w iloœci: 4. Cena za sztuke: 1200.47 PLN. £¹czna cena za zamówienie: 4801.88 PLN. Cene sprzeda¿y produktu ustalono na: 1899.99 PLN.
+Sprzedano "Rower" w iloœæ sztuk: 1. Cena sprzeda¿y: 1899.99 PLN.
+Rozpoczeto edycje przedmiotu "rower".
+Ustawiono now¹ nazwê przedmiotu: "Rower miejski".
+Zakoñczono edycje przedmiotu: "rower"
+Do konta dodano: 100.0 PLN.
+Sprzedano "Rower miejski" w iloœæ sztuk: 2. Cena sprzeda¿y: 3799.98 PLN.
+Zakupiono przedmiot: "Pi³ka", w iloœci: 10. Cena za sztuke: 20.24 PLN. £¹czna cena za zamówienie: 202.4 PLN. Cene sprzeda¿y produktu ustalono na: 59.99 PLN.
+Sprzedano "Pi³ka" w iloœæ sztuk: 2. Cena sprzeda¿y: 119.98 PLN.
+Rozpoczeto edycje przedmiotu "pi³ka".
+Ustawiono now¹ nazwê przedmiotu: "Pi³ka do koszykówki".
+Zakoñczono edycje przedmiotu: "pi³ka"
+Rozpoczeto edycje przedmiotu "pi³ka do koszykówki".
+Ustawiono now¹ cenê przedmiotu: 65.4 PLN.
+Zakoñczono edycje przedmiotu: "pi³ka do koszykówki"
+Sprzedano "Pi³ka do koszykówki" w iloœæ sztuk: 1. Cena sprzeda¿y: 65.4 PLN.
+Do konta dodano: 200.0 PLN.
+Sprzedano "Pi³ka do koszykówki" w iloœæ sztuk: 1. Cena sprzeda¿y: 65.4 PLN.
+Zakupiono przedmiot: "Hulajnoga", w iloœci: 3. Cena za sztuke: 150.78 PLN. £¹czna cena za zamówienie: 452.34 PLN. Cene sprzeda¿y produktu ustalono na: 210.2 PLN.
+Do konta dodano: 2000.0 PLN.
+Sprzedano "Rower miejski" w iloœæ sztuk: 1. Cena sprzeda¿y: 1899.99 PLN.
+Zakupiono przedmiot: "Deskorolka", w iloœci: 10. Cena za sztuke: 60.33 PLN. £¹czna cena za zamówienie: 603.3 PLN. Cene sprzeda¿y produktu ustalono na: 105.99 PLN.
+Sprzedano "Deskorolka" w iloœæ sztuk: 1. Cena sprzeda¿y: 105.99 PLN.
+Sprzedano "Deskorolka" w iloœæ sztuk: 1. Cena sprzeda¿y: 105.99 PLN.
+Sprzedano "Hulajnoga" w iloœæ sztuk: 1. Cena sprzeda¿y: 210.2 PLN.
+Zakupiono przedmiot: "Papier Toaletowy", w iloœci: 200. Cena za sztuke: 10.0 PLN. £¹czna cena za zamówienie: 2000.0 PLN.
+Zakupiono przedmiot: "Wyka³aczka", w iloœci: 1. Cena za sztuke: 1.0 PLN. £¹czna cena za zamówienie: 1.0 PLN.
+Zakupiono przedmiot: "Worki na œmieci", w iloœci: 8. Cena za sztuke: 6.99 PLN. £¹czna cena za zamówienie: 55.92 PLN.
+Zakupiono przedmiot: "Nesquik", w iloœci: 1. Cena za sztuke: 12.99 PLN. £¹czna cena za zamówienie: 12.99 PLN.
+Zakupiono przedmiot: "Rower biegowy", w iloœci: 6. Cena za sztuke: 399.99 PLN. £¹czna cena za zamówienie: 2399.94 PLN.
+Zakupiono przedmiot: "Trampolina", w iloœci: 1. Cena za sztuke: 6000.0 PLN. £¹czna cena za zamówienie: 6000.0 PLN.
+Zakupiono przedmiot: "Chustaeczka", w iloœci: 1. Cena za sztuke: 0.01 PLN. £¹czna cena za zamówienie: 0.01 PLN.
+Zakupiono przedmiot: "Chusteczka", w iloœci: 1. Cena za sztuke: 0.01 PLN. £¹czna cena za zamówienie: 0.01 PLN.
+Zakupiono przedmiot: "Lody", w iloœci: 10. Cena za sztuke: 3.25 PLN. £¹czna cena za zamówienie: 32.5 PLN.
+Zakupiono przedmiot: "Wyka³aczki", w iloœci: 10. Cena za sztuke: 2.4 PLN. £¹czna cena za zamówienie: 24.0 PLN.
+Sprzedano "Wyka³aczki" w iloœæ sztuk: 1. Cena sprzeda¿y: 5.89 PLN.
+Sprzedano "Wyka³aczki" w iloœæ sztuk: 3. Cena sprzeda¿y: 17.67 PLN.
+Sprzedano "Wyka³aczki" w iloœæ sztuk: -7. Cena sprzeda¿y: -41.23 PLN.
+Sprzedano "Chustaeczka" w iloœæ sztuk: 1. Cena sprzeda¿y: 2.5 PLN.
+Sprzedano "Lody" w iloœæ sztuk: 1. Cena sprzeda¿y: 6.9 PLN.
+Z konta odjêto: -400.0 PLN.
+Do konta dodano: 550.0 PLN.
+Zakupiono przedmiot: "Bu³ki", w iloœci: 100. Cena za sztuke: 0.83 PLN. £¹czna cena za zamówienie: 83.0 PLN.
+Sprzedano "Bu³ki" w iloœæ sztuk: 10. Cena sprzeda¿y: 13.0 PLN.

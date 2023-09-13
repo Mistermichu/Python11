@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inventory Manager - Historia</title>
+</head>
+
+<body>
+    <h1>Historia operacji</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Numer operacji</th>
+                <th>Opis operacji</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in history_data %}
+            <tr>
+                <td>{{ loop.index }}</td>
+                <td>{{ entry }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

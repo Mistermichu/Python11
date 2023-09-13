@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Inventory Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Stan konta: {{ account_balance|round(2) }} PLN</h1>
+    <h1>Magazyn:</h1>
+    <ul>
+        {% for item_name, item_data in inventory.items() %}
+        <li>{{ item_data.item_name }} - Cena: {{ item_data.list_price }} PLN - Dostępna ilość: {{ item_data.quantity }}
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Formularz zakupu</h2>
+    <form method="POST" action="/buy">
+        <label for="purchase_product">Nazwa produktu:</label>
+        <input type="text" id="purchase_product" name="purchase_product" required><br>
+
+        <label for="purchase_price">Cena (PLN):</label>
+        <input type="number" id="purchase_price" name="purchase_price" step="0.01" min="0" required><br>
+
+        <label for="purchase_quantity">Ilość:</label>
+        <input type="number" id="purchase_quantity" name="purchase_quantity" min="0" required><br>
+
+        <label for="selling_price">Docelowa cena sprzedaży (PLN):</label>
+        <input type="number" id="selling_price" name="selling_price" step="0.01" min="0" required><br>
+
+        <input type="submit" value="Kup">
+    </form>
+
+    <h2>Formularz sprzedaży</h2>
+    <form method="POST" action="/sell">
+        <label for="sell_product">Nazwa produktu:</label>
+        <input type="text" id="sell_product" name="sell_product" required><br>
+
+        <label for="sell_quantity">Ilość:</label>
+        <input type="number" id="sell_quantity" name="sell_quantity" min="0" required><br>
+
+        <input type="submit" value="Sprzedaj">
+    </form>
+
+    <h2>Formularz zmiany salda</h2>
+    <form method="POST" action="/balance">
+        <label for="balance_change">Wartość zmiany salda (PLN):</label>
+        <input type="number" id="balance_change" name="balance_change" step="0.01" required><br>
+
+        <input type="submit" value="Zmień saldo">
+    </form>
+</body>
+
+</html>
