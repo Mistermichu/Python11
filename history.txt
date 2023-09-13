@@ -54,3 +54,13 @@ Sprzedano "Bu³ki" w iloœæ sztuk: 1. Cena sprzeda¿y: 1.3 PLN.
 Zakupiono przedmiot: "Sianko", w iloœci: 30. Cena za sztuke: 2.84 PLN. £¹czna cena za zamówienie: 85.2 PLN.
 Sprzedano "Pi³ka do koszykówki" w iloœæ sztuk: 1. Cena sprzeda¿y: 65.4 PLN.
 Do konta dodano: 15000.0 PLN.
+Sprzedano "Rower biegowy" w iloœæ sztuk: 1. Cena sprzeda¿y: 345.15 PLN.
+Zakupiono przedmiot: "Aparat", w iloœci: 10. Cena za sztuke: 143.78 PLN. £¹czna cena za zamówienie: 1437.8 PLN.
+Zakupiono przedmiot: "Aparat", w iloœci: 1. Cena za sztuke: 143.44 PLN. £¹czna cena za zamówienie: 143.44 PLN.
+Zakupiono przedmiot: "S³uchawki", w iloœci: 6. Cena za sztuke: 82.37 PLN. £¹czna cena za zamówienie: 494.22 PLN.
+Zakupiono przedmiot: "Telewizor", w iloœci: 3. Cena za sztuke: 2010.3 PLN. £¹czna cena za zamówienie: 6030.9 PLN.
+Zakupiono przedmiot: "TheSims 2", w iloœci: 30. Cena za sztuke: 45.31 PLN. £¹czna cena za zamówienie: 1359.3 PLN.
+Zakupiono przedmiot: "The Sims 3", w iloœci: 20. Cena za sztuke: 74.25 PLN. £¹czna cena za zamówienie: 1485.0 PLN.
+Sprzedano "TheSims 2" w iloœæ sztuk: 1. Cena sprzeda¿y: 109.99 PLN.
+Zakupiono przedmiot: "The Sims 4", w iloœci: 20. Cena za sztuke: 96.47 PLN. £¹czna cena za zamówienie: 1929.4 PLN.
+Zakupiono przedmiot: "The Sims 3", w iloœci: 3. Cena za sztuke: 78.45 PLN. £¹czna cena za zamówienie: 235.35 PLN.

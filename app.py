@@ -17,13 +17,14 @@ db = SQLAlchemy(app)
 
 class HistoryEntry(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    entry = db.Column(db.String(500))
+    message = db.Column(db.String(500))
 
 
 class InventoryItem(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100))
     quantity = db.Column(db.Integer)
+    list_price = db.Column(db.Float)
 
 
 with app.app_context():

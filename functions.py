@@ -157,7 +157,7 @@ def break_point():
 
 
 def buy(account_balance, history, inventory, product, price, quantity, selling_price, db):
-    from app import HistoryEntry
+    from app import HistoryEntry, InventoryItem
     item_name = product
     item_quantity = quantity
     cost_price = price
@@ -168,9 +168,8 @@ def buy(account_balance, history, inventory, product, price, quantity, selling_p
     history_message = f"Zakupiono przedmiot: \"{item_name}\", w ilości: {item_quantity}. Cena za sztuke: {round(cost_price, 2)} PLN. Łączna cena za zamówienie: {round(purchase_price, 2)} PLN."
     history.append(history_message)
 
-    history_entry = HistoryEntry(entry=history_message)
+    history_entry = HistoryEntry(message=history_message)
     db.session.add(history_entry)
-    db.session.commit()
 
     if item_name.upper() not in inventory:
         inventory[item_name.upper()] = {
@@ -178,8 +177,19 @@ def buy(account_balance, history, inventory, product, price, quantity, selling_p
             "quantity": item_quantity,
             "list_price": list_price
         }
+
+        item_entry = InventoryItem(name=item_name.upper(
+        ), quantity=item_quantity, list_price=list_price)
+        db.session.add(item_entry)
+
     else:
         inventory[item_name.upper()]["quantity"] += item_quantity
+        item_name_upper = item_name.upper()
+        db_item = db.session.query(InventoryItem).filter_by(
+            name=item_name_upper).first()
+        db_item.quantity += item_quantity
+
+    db.session.commit()
     return purchase_price
 
 
@@ -192,7 +202,7 @@ def balance(history, new_balance, account_balance, db):
         history_message = f"Do konta dodano: {amount} PLN."
         history.append(history_message)
 
-        history_entry = HistoryEntry(entry=history_message)
+        history_entry = HistoryEntry(message=history_message)
         db.session.add(history_entry)
         db.session.commit()
 
@@ -200,7 +210,7 @@ def balance(history, new_balance, account_balance, db):
         history_message = f"Z konta odjęto: {amount} PLN."
         history.append(history_message)
 
-        history_entry = HistoryEntry(entry=history_message)
+        history_entry = HistoryEntry(messagey=history_message)
         db.session.add(history_entry)
         db.session.commit()
 
@@ -239,7 +249,7 @@ def inventory_overview(inventory):
 
 
 def sell(history, inventory, item, sell_quantity, db):
-    from app import HistoryEntry
+    from app import HistoryEntry, InventoryItem
     item_to_sell = item.upper()
     if item_to_sell not in inventory:
         return 0
@@ -257,7 +267,7 @@ def sell(history, inventory, item, sell_quantity, db):
             history_message = f"Sprzedano \"{item_name}\" w ilość sztuk: {selling_quantity}. Cena sprzedaży: {round(selling_price, 2)} PLN."
             history.append(history_message)
 
-            history_entry = HistoryEntry(entry=history_message)
+            history_entry = HistoryEntry(message=history_message)
             db.session.add(history_entry)
             db.session.commit()
 
